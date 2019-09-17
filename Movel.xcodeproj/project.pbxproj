@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B1E2330786D00C4DE61 /* AppDelegate.swift */; };
 		92917B212330786D00C4DE61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B202330786D00C4DE61 /* ViewController.swift */; };
-		92917B242330786D00C4DE61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92917B222330786D00C4DE61 /* Main.storyboard */; };
 		92917B262330787000C4DE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92917B252330787000C4DE61 /* Assets.xcassets */; };
 		92917B292330787000C4DE61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92917B272330787000C4DE61 /* LaunchScreen.storyboard */; };
 		92917B342330787100C4DE61 /* MovelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B332330787100C4DE61 /* MovelTests.swift */; };
 		92917B3F2330787100C4DE61 /* MovelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B3E2330787100C4DE61 /* MovelUITests.swift */; };
+		92917B5A2330C0A200C4DE61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B592330C0A200C4DE61 /* MainViewController.swift */; };
+		92917B5C2330C0C300C4DE61 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B5B2330C0C300C4DE61 /* HomeViewController.swift */; };
+		92917B5E2330C0D300C4DE61 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B5D2330C0D300C4DE61 /* PreferenceViewController.swift */; };
+		92917B602330C56F00C4DE61 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B5F2330C56F00C4DE61 /* PlayViewController.swift */; };
+		92917B622330CD7400C4DE61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B612330CD7400C4DE61 /* MainView.swift */; };
+		92917B642330CD7E00C4DE61 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B632330CD7E00C4DE61 /* PreferenceView.swift */; };
+		92917B662330CD9700C4DE61 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B652330CD9700C4DE61 /* PlayView.swift */; };
+		92917B682330CDA500C4DE61 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B672330CDA500C4DE61 /* HealthData.swift */; };
+		92917B6A2330CDB700C4DE61 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B692330CDB700C4DE61 /* Timer.swift */; };
+		92917B6C2330CDD200C4DE61 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B6B2330CDD200C4DE61 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +46,6 @@
 		92917B1B2330786D00C4DE61 /* Movel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92917B1E2330786D00C4DE61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92917B202330786D00C4DE61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92917B232330786D00C4DE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92917B252330787000C4DE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92917B282330787000C4DE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92917B2A2330787000C4DE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		92917B3A2330787100C4DE61 /* MovelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92917B3E2330787100C4DE61 /* MovelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovelUITests.swift; sourceTree = "<group>"; };
 		92917B402330787100C4DE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92917B592330C0A200C4DE61 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		92917B5B2330C0C300C4DE61 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		92917B5D2330C0D300C4DE61 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		92917B5F2330C56F00C4DE61 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		92917B612330CD7400C4DE61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		92917B632330CD7E00C4DE61 /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
+		92917B652330CD9700C4DE61 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		92917B672330CDA500C4DE61 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
+		92917B692330CDB700C4DE61 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		92917B6B2330CDD200C4DE61 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +115,13 @@
 		92917B1D2330786D00C4DE61 /* Movel */ = {
 			isa = PBXGroup;
 			children = (
+				92917B502330792200C4DE61 /* Font */,
+				92917B4F2330790F00C4DE61 /* Helper */,
+				92917B4E2330790500C4DE61 /* View */,
+				92917B4D233078FD00C4DE61 /* Controller */,
+				92917B4C233078F500C4DE61 /* Model */,
 				92917B1E2330786D00C4DE61 /* AppDelegate.swift */,
 				92917B202330786D00C4DE61 /* ViewController.swift */,
-				92917B222330786D00C4DE61 /* Main.storyboard */,
 				92917B252330787000C4DE61 /* Assets.xcassets */,
 				92917B272330787000C4DE61 /* LaunchScreen.storyboard */,
 				92917B2A2330787000C4DE61 /* Info.plist */,
@@ -123,6 +145,51 @@
 				92917B402330787100C4DE61 /* Info.plist */,
 			);
 			path = MovelUITests;
+			sourceTree = "<group>";
+		};
+		92917B4C233078F500C4DE61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92917B6B2330CDD200C4DE61 /* Challenge.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92917B4D233078FD00C4DE61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92917B592330C0A200C4DE61 /* MainViewController.swift */,
+				92917B5B2330C0C300C4DE61 /* HomeViewController.swift */,
+				92917B5D2330C0D300C4DE61 /* PreferenceViewController.swift */,
+				92917B5F2330C56F00C4DE61 /* PlayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92917B4E2330790500C4DE61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92917B612330CD7400C4DE61 /* MainView.swift */,
+				92917B632330CD7E00C4DE61 /* PreferenceView.swift */,
+				92917B652330CD9700C4DE61 /* PlayView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92917B4F2330790F00C4DE61 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				92917B672330CDA500C4DE61 /* HealthData.swift */,
+				92917B692330CDB700C4DE61 /* Timer.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		92917B502330792200C4DE61 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +298,6 @@
 			files = (
 				92917B292330787000C4DE61 /* LaunchScreen.storyboard in Resources */,
 				92917B262330787000C4DE61 /* Assets.xcassets in Resources */,
-				92917B242330786D00C4DE61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +322,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92917B5E2330C0D300C4DE61 /* PreferenceViewController.swift in Sources */,
+				92917B6C2330CDD200C4DE61 /* Challenge.swift in Sources */,
+				92917B682330CDA500C4DE61 /* HealthData.swift in Sources */,
+				92917B642330CD7E00C4DE61 /* PreferenceView.swift in Sources */,
+				92917B622330CD7400C4DE61 /* MainView.swift in Sources */,
+				92917B5A2330C0A200C4DE61 /* MainViewController.swift in Sources */,
 				92917B212330786D00C4DE61 /* ViewController.swift in Sources */,
 				92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */,
+				92917B662330CD9700C4DE61 /* PlayView.swift in Sources */,
+				92917B602330C56F00C4DE61 /* PlayViewController.swift in Sources */,
+				92917B6A2330CDB700C4DE61 /* Timer.swift in Sources */,
+				92917B5C2330C0C300C4DE61 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		92917B222330786D00C4DE61 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92917B232330786D00C4DE61 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		92917B272330787000C4DE61 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
