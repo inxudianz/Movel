@@ -22,7 +22,8 @@ class HomeView: UIView {
     }
     
     func setupView() {
-        playButton = UIButton(type: .contactAdd)
+        backgroundColor = mainColor
+        playButton = UIButton(type: .system)
         playButton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         playButton.titleLabel?.text = "TES"
         self.addSubview(playButton)

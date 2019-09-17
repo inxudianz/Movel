@@ -23,6 +23,12 @@
 		92917B682330CDA500C4DE61 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B672330CDA500C4DE61 /* HealthData.swift */; };
 		92917B6A2330CDB700C4DE61 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B692330CDB700C4DE61 /* Timer.swift */; };
 		92917B6C2330CDD200C4DE61 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B6B2330CDD200C4DE61 /* Challenge.swift */; };
+		92917B6E2331398A00C4DE61 /* ColourPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B6D2331398A00C4DE61 /* ColourPalette.swift */; };
+		92917B7023313A0700C4DE61 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B6F23313A0700C4DE61 /* UIColorExtension.swift */; };
+		92917B7223313D8D00C4DE61 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B7123313D8D00C4DE61 /* Trigonometry.swift */; };
+		92917B74233140D400C4DE61 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B73233140D400C4DE61 /* Triangle.swift */; };
+		92917B762331429C00C4DE61 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B752331429C00C4DE61 /* TutorialView.swift */; };
+		92917B7A2331439C00C4DE61 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92917B792331439C00C4DE61 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,13 @@
 		92917B672330CDA500C4DE61 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
 		92917B692330CDB700C4DE61 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		92917B6B2330CDD200C4DE61 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		92917B6D2331398A00C4DE61 /* ColourPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourPalette.swift; sourceTree = "<group>"; };
+		92917B6F23313A0700C4DE61 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		92917B7123313D8D00C4DE61 /* Trigonometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trigonometry.swift; sourceTree = "<group>"; };
+		92917B73233140D400C4DE61 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		92917B752331429C00C4DE61 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		92917B772331439C00C4DE61 /* Movel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movel.entitlements; sourceTree = "<group>"; };
+		92917B792331439C00C4DE61 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92917B7A2331439C00C4DE61 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,7 @@
 				92917B322330787100C4DE61 /* MovelTests */,
 				92917B3D2330787100C4DE61 /* MovelUITests */,
 				92917B1C2330786D00C4DE61 /* Products */,
+				92917B782331439C00C4DE61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +130,7 @@
 		92917B1D2330786D00C4DE61 /* Movel */ = {
 			isa = PBXGroup;
 			children = (
+				92917B772331439C00C4DE61 /* Movel.entitlements */,
 				92917B502330792200C4DE61 /* Font */,
 				92917B4F2330790F00C4DE61 /* Helper */,
 				92917B4E2330790500C4DE61 /* View */,
@@ -172,6 +188,7 @@
 				92917B612330CD7400C4DE61 /* HomeView.swift */,
 				92917B632330CD7E00C4DE61 /* PreferenceView.swift */,
 				92917B652330CD9700C4DE61 /* PlayView.swift */,
+				92917B752331429C00C4DE61 /* TutorialView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +198,10 @@
 			children = (
 				92917B672330CDA500C4DE61 /* HealthData.swift */,
 				92917B692330CDB700C4DE61 /* Timer.swift */,
+				92917B6D2331398A00C4DE61 /* ColourPalette.swift */,
+				92917B6F23313A0700C4DE61 /* UIColorExtension.swift */,
+				92917B7123313D8D00C4DE61 /* Trigonometry.swift */,
+				92917B73233140D400C4DE61 /* Triangle.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -190,6 +211,14 @@
 			children = (
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		92917B782331439C00C4DE61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92917B792331439C00C4DE61 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +289,11 @@
 				TargetAttributes = {
 					92917B1A2330786D00C4DE61 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					92917B2E2330787100C4DE61 = {
 						CreatedOnToolsVersion = 10.3;
@@ -323,17 +357,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				92917B5E2330C0D300C4DE61 /* PreferenceViewController.swift in Sources */,
+				92917B7023313A0700C4DE61 /* UIColorExtension.swift in Sources */,
 				92917B6C2330CDD200C4DE61 /* Challenge.swift in Sources */,
 				92917B682330CDA500C4DE61 /* HealthData.swift in Sources */,
 				92917B642330CD7E00C4DE61 /* PreferenceView.swift in Sources */,
+				92917B7223313D8D00C4DE61 /* Trigonometry.swift in Sources */,
 				92917B622330CD7400C4DE61 /* HomeView.swift in Sources */,
 				92917B5A2330C0A200C4DE61 /* MainViewController.swift in Sources */,
 				92917B212330786D00C4DE61 /* ViewController.swift in Sources */,
+				92917B762331429C00C4DE61 /* TutorialView.swift in Sources */,
 				92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */,
 				92917B662330CD9700C4DE61 /* PlayView.swift in Sources */,
 				92917B602330C56F00C4DE61 /* PlayViewController.swift in Sources */,
 				92917B6A2330CDB700C4DE61 /* Timer.swift in Sources */,
+				92917B6E2331398A00C4DE61 /* ColourPalette.swift in Sources */,
 				92917B5C2330C0C300C4DE61 /* HomeViewController.swift in Sources */,
+				92917B74233140D400C4DE61 /* Triangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +539,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Movel/Movel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPQ9HAVPNV;
 				INFOPLIST_FILE = Movel/Info.plist;
@@ -518,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Movel/Movel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WPQ9HAVPNV;
 				INFOPLIST_FILE = Movel/Info.plist;
