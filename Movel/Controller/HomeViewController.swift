@@ -16,6 +16,8 @@ class HomeViewController: UIViewController {
         title = "Home"
         // Do any additional setup after loading the view.
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self , action: #selector(openPreference))
+        
+        view = HomeView()
     }
     
     @objc func openPreference() {

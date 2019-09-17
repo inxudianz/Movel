@@ -17,7 +17,7 @@
 		92917B5C2330C0C300C4DE61 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B5B2330C0C300C4DE61 /* HomeViewController.swift */; };
 		92917B5E2330C0D300C4DE61 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B5D2330C0D300C4DE61 /* PreferenceViewController.swift */; };
 		92917B602330C56F00C4DE61 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B5F2330C56F00C4DE61 /* PlayViewController.swift */; };
-		92917B622330CD7400C4DE61 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B612330CD7400C4DE61 /* MainView.swift */; };
+		92917B622330CD7400C4DE61 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B612330CD7400C4DE61 /* HomeView.swift */; };
 		92917B642330CD7E00C4DE61 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B632330CD7E00C4DE61 /* PreferenceView.swift */; };
 		92917B662330CD9700C4DE61 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B652330CD9700C4DE61 /* PlayView.swift */; };
 		92917B682330CDA500C4DE61 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B672330CDA500C4DE61 /* HealthData.swift */; };
@@ -59,7 +59,7 @@
 		92917B5B2330C0C300C4DE61 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		92917B5D2330C0D300C4DE61 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		92917B5F2330C56F00C4DE61 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
-		92917B612330CD7400C4DE61 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		92917B612330CD7400C4DE61 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		92917B632330CD7E00C4DE61 /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
 		92917B652330CD9700C4DE61 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		92917B672330CDA500C4DE61 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		92917B4E2330790500C4DE61 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				92917B612330CD7400C4DE61 /* MainView.swift */,
+				92917B612330CD7400C4DE61 /* HomeView.swift */,
 				92917B632330CD7E00C4DE61 /* PreferenceView.swift */,
 				92917B652330CD9700C4DE61 /* PlayView.swift */,
 			);
@@ -326,7 +326,7 @@
 				92917B6C2330CDD200C4DE61 /* Challenge.swift in Sources */,
 				92917B682330CDA500C4DE61 /* HealthData.swift in Sources */,
 				92917B642330CD7E00C4DE61 /* PreferenceView.swift in Sources */,
-				92917B622330CD7400C4DE61 /* MainView.swift in Sources */,
+				92917B622330CD7400C4DE61 /* HomeView.swift in Sources */,
 				92917B5A2330C0A200C4DE61 /* MainViewController.swift in Sources */,
 				92917B212330786D00C4DE61 /* ViewController.swift in Sources */,
 				92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */,
