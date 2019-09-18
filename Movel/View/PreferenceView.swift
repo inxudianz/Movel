@@ -31,7 +31,7 @@ class PreferenceView: UIView {
         backgroundColor = .white
         intensityLabel.frame = CGRect(x: 176, y: 123, width: 70, height: 19)
         intensityLabel.text = "Intensity"
-        intensityLabel.font.withSize(16)
+        intensityLabel.font = intensityLabel.font.withSize(16)
         intensityLabel.textColor = textColor
         
         intensitySegment.frame = CGRect(x: 36, y: 157, width: 343, height: 27)
@@ -39,9 +39,10 @@ class PreferenceView: UIView {
         intensitySegment.insertSegment(withTitle: "Medium", at: 1, animated: true)
         intensitySegment.insertSegment(withTitle: "Hard", at: 2, animated: true)
         intensitySegment.selectedSegmentIndex = 0
+        
         durationLabel.frame = CGRect(x: 176, y: 219, width: 70, height: 19)
         durationLabel.text = "Duration"
-        durationLabel.font.withSize(16)
+        durationLabel.font = durationLabel.font.withSize(16)
         durationLabel.textColor = textColor
         
         durationSlider.frame = CGRect(x: 64, y: 273, width: 287, height: 44)
@@ -52,7 +53,7 @@ class PreferenceView: UIView {
         
         durationNumber.frame = CGRect(x: 197, y: 317, width: 40, height: 20)
         durationNumber.text = "30"
-        durationNumber.font.withSize(16)
+        durationNumber.font = durationNumber.font.withSize(16)
         durationNumber.textColor = textColor
         
         saveButton.frame = CGRect(x: 107, y: 387, width: 200, height: 50)

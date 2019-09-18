@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9224B03E2332114C0092286C /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B03D2332114C0092286C /* Preference.swift */; };
+		9224B0402332A2AA0092286C /* TutorialViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B03F2332A2AA0092286C /* TutorialViewViewController.swift */; };
+		9224B0422332A5030092286C /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B0412332A5030092286C /* FinishViewController.swift */; };
+		9224B0442332A51D0092286C /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B0432332A51D0092286C /* FinishView.swift */; };
 		92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B1E2330786D00C4DE61 /* AppDelegate.swift */; };
 		92917B212330786D00C4DE61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B202330786D00C4DE61 /* ViewController.swift */; };
 		92917B262330787000C4DE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92917B252330787000C4DE61 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		9224B03D2332114C0092286C /* Preference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		9224B03F2332A2AA0092286C /* TutorialViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewViewController.swift; sourceTree = "<group>"; };
+		9224B0412332A5030092286C /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FinishViewController.swift; path = Movel/Controller/FinishViewController.swift; sourceTree = SOURCE_ROOT; };
+		9224B0432332A51D0092286C /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
 		92917B1B2330786D00C4DE61 /* Movel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92917B1E2330786D00C4DE61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92917B202330786D00C4DE61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +187,8 @@
 				92917B5B2330C0C300C4DE61 /* HomeViewController.swift */,
 				92917B5D2330C0D300C4DE61 /* PreferenceViewController.swift */,
 				92917B5F2330C56F00C4DE61 /* PlayViewController.swift */,
+				9224B0412332A5030092286C /* FinishViewController.swift */,
+				9224B03F2332A2AA0092286C /* TutorialViewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 				92917B632330CD7E00C4DE61 /* PreferenceView.swift */,
 				92917B652330CD9700C4DE61 /* PlayView.swift */,
 				92917B752331429C00C4DE61 /* TutorialView.swift */,
+				9224B0432332A51D0092286C /* FinishView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -364,6 +373,7 @@
 				92917B6C2330CDD200C4DE61 /* Challenge.swift in Sources */,
 				92917B682330CDA500C4DE61 /* HealthData.swift in Sources */,
 				92917B642330CD7E00C4DE61 /* PreferenceView.swift in Sources */,
+				9224B0422332A5030092286C /* FinishViewController.swift in Sources */,
 				92917B7223313D8D00C4DE61 /* Trigonometry.swift in Sources */,
 				92917B622330CD7400C4DE61 /* HomeView.swift in Sources */,
 				92917B5A2330C0A200C4DE61 /* MainViewController.swift in Sources */,
@@ -372,9 +382,11 @@
 				92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */,
 				92917B662330CD9700C4DE61 /* PlayView.swift in Sources */,
 				92917B602330C56F00C4DE61 /* PlayViewController.swift in Sources */,
+				9224B0442332A51D0092286C /* FinishView.swift in Sources */,
 				92917B6A2330CDB700C4DE61 /* Timer.swift in Sources */,
 				92917B6E2331398A00C4DE61 /* ColourPalette.swift in Sources */,
 				92917B5C2330C0C300C4DE61 /* HomeViewController.swift in Sources */,
+				9224B0402332A2AA0092286C /* TutorialViewViewController.swift in Sources */,
 				9224B03E2332114C0092286C /* Preference.swift in Sources */,
 				92917B74233140D400C4DE61 /* Triangle.swift in Sources */,
 			);

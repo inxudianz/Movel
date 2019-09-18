@@ -10,12 +10,20 @@ import UIKit
 
 class TutorialView: UIView {
 
+    let trophyImage = UIImage()
+    let descLabel = UILabel()
+    let continueButton = UIButton()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    func setupView() {
+        
     }
 
 }

@@ -18,7 +18,7 @@ extension Trigonometry {
     func createShape() -> CAShapeLayer {
         let shape = CAShapeLayer()
         shape.path = createPath().cgPath
-        shape.fillColor = UIColor.blue.cgColor
+        shape.fillColor = buttonColor?.cgColor
         return shape
     }
     
