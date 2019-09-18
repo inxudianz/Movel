@@ -28,7 +28,7 @@
 		92917B7223313D8D00C4DE61 /* Trigonometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B7123313D8D00C4DE61 /* Trigonometry.swift */; };
 		92917B74233140D400C4DE61 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B73233140D400C4DE61 /* Triangle.swift */; };
 		92917B762331429C00C4DE61 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B752331429C00C4DE61 /* TutorialView.swift */; };
-		92917B7A2331439C00C4DE61 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92917B792331439C00C4DE61 /* HealthKit.framework */; };
+		92917B7E2331D6CD00C4DE61 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92917B7D2331D6CC00C4DE61 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,7 @@
 		92917B73233140D400C4DE61 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		92917B752331429C00C4DE61 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		92917B772331439C00C4DE61 /* Movel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movel.entitlements; sourceTree = "<group>"; };
-		92917B792331439C00C4DE61 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		92917B7D2331D6CC00C4DE61 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92917B7A2331439C00C4DE61 /* HealthKit.framework in Frameworks */,
+				92917B7E2331D6CD00C4DE61 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +216,7 @@
 		92917B782331439C00C4DE61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				92917B792331439C00C4DE61 /* HealthKit.framework */,
+				92917B7D2331D6CC00C4DE61 /* HealthKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
