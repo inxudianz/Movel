@@ -67,7 +67,7 @@ class PreferenceViewController: UIViewController {
             preference.intensity = userDefault.string(forKey: "intensity")!
             
             preferenceView.durationSlider.value = preference.duration
-            preferenceView.durationNumber.text = String(preference.duration)
+            preferenceView.durationNumber.text = String(Int(round(preference.duration)))
             preferenceView.intensitySegment.selectedSegmentIndex = getDefaultIntensity(preference: preference)
         }
     }

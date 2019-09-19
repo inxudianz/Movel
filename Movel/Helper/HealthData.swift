@@ -61,4 +61,25 @@ class HealthData {
         HKHealthStore().execute(query)
     }
     
+    func saveStep(step: Double) {
+        guard let stepCountType = HKQuantityType.quantityType(forIdentifier: .stepCount)
+            else {
+                print("Error : Step Count no longer exist!")
+                return
+        }
+        
+        let stepCountQuantity = HKQuantity(unit: HKUnit.count(), doubleValue: step)
+        
+        let stepCountSample = HKQuantitySample(type: stepCountType, quantity: stepCountQuantity, start: Date(), end: Date())
+        
+        HKHealthStore().save(stepCountSample) { (success, error) in
+            if let error = error {
+                print("Error : \(error.localizedDescription)")
+            }
+            else {
+                print("Save successsful")
+            }
+        }
+    }
+    
 }

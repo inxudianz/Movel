@@ -34,6 +34,7 @@
 		92917B74233140D400C4DE61 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B73233140D400C4DE61 /* Triangle.swift */; };
 		92917B762331429C00C4DE61 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B752331429C00C4DE61 /* TutorialView.swift */; };
 		92917B7E2331D6CD00C4DE61 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92917B7D2331D6CC00C4DE61 /* HealthKit.framework */; };
+		929C6BB32333BE47008E0412 /* ScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C6BB22333BE47008E0412 /* ScoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		92917B752331429C00C4DE61 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		92917B772331439C00C4DE61 /* Movel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movel.entitlements; sourceTree = "<group>"; };
 		92917B7D2331D6CC00C4DE61 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		929C6BB22333BE47008E0412 /* ScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			children = (
 				92917B332330787100C4DE61 /* MovelTests.swift */,
 				92917B352330787100C4DE61 /* Info.plist */,
+				929C6BB22333BE47008E0412 /* ScoreTests.swift */,
 			);
 			path = MovelTests;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				929C6BB32333BE47008E0412 /* ScoreTests.swift in Sources */,
 				92917B342330787100C4DE61 /* MovelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,10 +18,11 @@ class PlayView: MasterView {
     override func setupView() {
         backgroundColor = mainColor
         
-        countdownLabel.frame = CGRect(x: 125, y: 424, width: 300, height: 48)
+        countdownLabel.frame = CGRect(x: 125, y: 424, width: 190, height: 48)
         countdownLabel.textColor = textColor
         countdownLabel.font = UIFont.systemFont(ofSize: 40, weight: .medium)
         countdownLabel.text = "Ready?"
+        countdownLabel.textAlignment = .center
         
         timer.frame = CGRect(x: 182, y: 504, width: 70, height: 48)
         timer.text = "00"

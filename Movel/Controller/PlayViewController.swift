@@ -131,13 +131,16 @@ class PlayViewController: UIViewController {
     
     @objc func tapScreen() {
         let finishViewController = FinishViewController()
-        finishViewController.score = 100 / abs(requiredSteps - steps)
+        var total = 100 * (steps * 1/requiredSteps)
+        
+        finishViewController.score = total
+        finishViewController.steps = steps
         self.present(finishViewController,animated: true)
     }
     func failCondition() {
         UIView.animate(withDuration: 0.3) {
             self.playView.backgroundColor = failColor
-            self.playView.countdownLabel.text = "FAILED"
+            self.playView.countdownLabel.text = "LOSE"
             self.playView.timer.isHidden = true
         }
     }
@@ -145,7 +148,7 @@ class PlayViewController: UIViewController {
     func winCondition() {
         UIView.animate(withDuration: 0.3) {
             self.playView.backgroundColor = successColor
-            self.playView.countdownLabel.text = "SUCCESS"
+            self.playView.countdownLabel.text = "WIN"
             self.playView.timer.isHidden = true
         }
     }

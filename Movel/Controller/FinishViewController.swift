@@ -12,6 +12,7 @@ class FinishViewController: UIViewController {
 
     let finishView = FinishView()
     var score = 0
+    var steps = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +25,19 @@ class FinishViewController: UIViewController {
     }
     
     @objc func gotoMainView() {
-        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
         saveScore()
+        saveToHK()
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
     func saveScore() {
         let userDefault = UserDefaults.standard
         userDefault.set(score, forKey: "score")
+    }
+    
+    func saveToHK() {
+        let healthData = HealthData()
+        healthData.saveStep(step: Double(steps))
     }
 
 }
