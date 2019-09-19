@@ -20,6 +20,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         title = "Home"
         
+        let score = Score()
+        print(score.calculateScore(steps: 20, required: 22))
         createRightBarItem()
         
         self.view = homeView
@@ -76,7 +78,11 @@ class HomeViewController: UIViewController {
             context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "We want to confirm your identity with Face ID") { (wasCorrect, error) in
                 if wasCorrect {
                     self.isValidated = true
-                    self.validated()
+                    DispatchQueue.global().async {
+                        DispatchQueue.main.async {
+                            self.validated()
+                        }
+                    }
                     print("Success")
                 }
                 else {

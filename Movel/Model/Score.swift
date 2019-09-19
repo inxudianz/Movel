@@ -9,11 +9,6 @@
 import Foundation
 
 class Score {
-    var score:Int
-    
-    init() {
-        score = 0
-    }
     
     func isWinning(steps:Int, required:Int) -> Bool {
         if steps >= required {
@@ -25,6 +20,7 @@ class Score {
     }
     
     func calculateScore(steps:Int, required:Int) -> Int {
-        return 100 * (steps * 1/required)
+        let result = Int(100 * Float((Float(steps) / Float(required))))
+        return result
     }
 }

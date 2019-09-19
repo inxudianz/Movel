@@ -110,7 +110,6 @@ class PlayViewController: UIViewController {
         if duration <= 0 {
             timer.invalidate()
             pedoMeter.stopUpdates()
-            
             checkWinCondition()
         }
     }
@@ -135,7 +134,6 @@ class PlayViewController: UIViewController {
     
     @objc func tapScreen() {
         let finishViewController = FinishViewController()
-        
         finishViewController.score = score.calculateScore(steps: steps, required: requiredSteps)
         finishViewController.steps = steps
         self.present(finishViewController,animated: true)
