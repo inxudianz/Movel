@@ -20,6 +20,7 @@ class PlayViewController: UIViewController {
     var requiredSteps:Int = 0
     var healthData:HealthData = HealthData()
     var pedoMeter = CMPedometer()
+    var score:Score = Score()
     
     
     override func viewDidLoad() {
@@ -66,8 +67,8 @@ class PlayViewController: UIViewController {
                                 total = 0
                                 self.playView.countdownLabel.text = String("\(total) Steps")
                             }
-                        }                    }
-                    
+                        }
+                    }
                     print(data.numberOfSteps)
                 }
             }
@@ -80,21 +81,22 @@ class PlayViewController: UIViewController {
     
     func playGame() {
         playView.runLabel.isHidden = false
-        let challenge = Challenge(duration: preference.duration, intensity: preference.intensity)
-        startPedo()
         playView.timer.isHidden = false
+        
+        let challenge = Challenge(duration: preference.duration, intensity: preference.intensity)
+        
+        startPedo()
         requiredSteps = challenge.createChallenge()
+        
         playView.countdownLabel.text = String("\(requiredSteps) Steps")
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timeLimitCountdown), userInfo: nil, repeats: true)
     }
     
     @objc func readyCountdown() {
-        
         playView.countdownLabel.text = String(countdownDuration)
         countdownDuration -= 1
         
         if countdownDuration < 0 {
-            print("Finished")
             timer.invalidate()
             
             playGame()
@@ -106,23 +108,25 @@ class PlayViewController: UIViewController {
         
         duration -= 0.1
         if duration <= 0 {
-            print("Finished")
             timer.invalidate()
             pedoMeter.stopUpdates()
+            
             checkWinCondition()
         }
     }
     
     func checkWinCondition() {
-        print("\(steps) OLD")
-        print("\(requiredSteps) NEW")
+        print("\(steps) Steps")
+        print("\(requiredSteps) Required")
         playView.runLabel.isHidden = true
-        if steps < requiredSteps {
-            failCondition()
-        }
-        else {
+        
+        if score.isWinning(steps: steps, required: requiredSteps) {
             winCondition()
         }
+        else {
+            failCondition()
+        }
+        
         playView.instruction.isHidden = false
         let tap = UITapGestureRecognizer(target: self, action: #selector(tapScreen))
         playView.addGestureRecognizer(tap)
@@ -131,12 +135,12 @@ class PlayViewController: UIViewController {
     
     @objc func tapScreen() {
         let finishViewController = FinishViewController()
-        var total = 100 * (steps * 1/requiredSteps)
         
-        finishViewController.score = total
+        finishViewController.score = score.calculateScore(steps: steps, required: requiredSteps)
         finishViewController.steps = steps
         self.present(finishViewController,animated: true)
     }
+    
     func failCondition() {
         UIView.animate(withDuration: 0.3) {
             self.playView.backgroundColor = failColor

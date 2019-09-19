@@ -13,7 +13,6 @@
 		9224B0442332A51D0092286C /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B0432332A51D0092286C /* FinishView.swift */; };
 		9224B046233327680092286C /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224B045233327680092286C /* MasterView.swift */; };
 		92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B1E2330786D00C4DE61 /* AppDelegate.swift */; };
-		92917B212330786D00C4DE61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B202330786D00C4DE61 /* ViewController.swift */; };
 		92917B262330787000C4DE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92917B252330787000C4DE61 /* Assets.xcassets */; };
 		92917B292330787000C4DE61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92917B272330787000C4DE61 /* LaunchScreen.storyboard */; };
 		92917B342330787100C4DE61 /* MovelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B332330787100C4DE61 /* MovelTests.swift */; };
@@ -26,7 +25,6 @@
 		92917B642330CD7E00C4DE61 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B632330CD7E00C4DE61 /* PreferenceView.swift */; };
 		92917B662330CD9700C4DE61 /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B652330CD9700C4DE61 /* PlayView.swift */; };
 		92917B682330CDA500C4DE61 /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B672330CDA500C4DE61 /* HealthData.swift */; };
-		92917B6A2330CDB700C4DE61 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B692330CDB700C4DE61 /* Timer.swift */; };
 		92917B6C2330CDD200C4DE61 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B6B2330CDD200C4DE61 /* Challenge.swift */; };
 		92917B6E2331398A00C4DE61 /* ColourPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B6D2331398A00C4DE61 /* ColourPalette.swift */; };
 		92917B7023313A0700C4DE61 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B6F23313A0700C4DE61 /* UIColorExtension.swift */; };
@@ -35,6 +33,7 @@
 		92917B762331429C00C4DE61 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92917B752331429C00C4DE61 /* TutorialView.swift */; };
 		92917B7E2331D6CD00C4DE61 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92917B7D2331D6CC00C4DE61 /* HealthKit.framework */; };
 		929C6BB32333BE47008E0412 /* ScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C6BB22333BE47008E0412 /* ScoreTests.swift */; };
+		929C6BB523340239008E0412 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929C6BB423340239008E0412 /* Score.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +61,6 @@
 		9224B045233327680092286C /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		92917B1B2330786D00C4DE61 /* Movel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92917B1E2330786D00C4DE61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92917B202330786D00C4DE61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92917B252330787000C4DE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92917B282330787000C4DE61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92917B2A2330787000C4DE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 		92917B632330CD7E00C4DE61 /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
 		92917B652330CD9700C4DE61 /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		92917B672330CDA500C4DE61 /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
-		92917B692330CDB700C4DE61 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		92917B6B2330CDD200C4DE61 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		92917B6D2331398A00C4DE61 /* ColourPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourPalette.swift; sourceTree = "<group>"; };
 		92917B6F23313A0700C4DE61 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -90,6 +87,7 @@
 		92917B772331439C00C4DE61 /* Movel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Movel.entitlements; sourceTree = "<group>"; };
 		92917B7D2331D6CC00C4DE61 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		929C6BB22333BE47008E0412 /* ScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTests.swift; sourceTree = "<group>"; };
+		929C6BB423340239008E0412 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +147,6 @@
 				92917B4D233078FD00C4DE61 /* Controller */,
 				92917B4C233078F500C4DE61 /* Model */,
 				92917B1E2330786D00C4DE61 /* AppDelegate.swift */,
-				92917B202330786D00C4DE61 /* ViewController.swift */,
 				92917B252330787000C4DE61 /* Assets.xcassets */,
 				92917B272330787000C4DE61 /* LaunchScreen.storyboard */,
 				92917B2A2330787000C4DE61 /* Info.plist */,
@@ -181,6 +178,7 @@
 			children = (
 				92917B6B2330CDD200C4DE61 /* Challenge.swift */,
 				9224B03D2332114C0092286C /* Preference.swift */,
+				929C6BB423340239008E0412 /* Score.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,7 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				92917B672330CDA500C4DE61 /* HealthData.swift */,
-				92917B692330CDB700C4DE61 /* Timer.swift */,
 				92917B6D2331398A00C4DE61 /* ColourPalette.swift */,
 				92917B6F23313A0700C4DE61 /* UIColorExtension.swift */,
 				92917B7123313D8D00C4DE61 /* Trigonometry.swift */,
@@ -383,18 +380,17 @@
 				92917B7223313D8D00C4DE61 /* Trigonometry.swift in Sources */,
 				92917B622330CD7400C4DE61 /* HomeView.swift in Sources */,
 				92917B5A2330C0A200C4DE61 /* MainViewController.swift in Sources */,
-				92917B212330786D00C4DE61 /* ViewController.swift in Sources */,
 				92917B762331429C00C4DE61 /* TutorialView.swift in Sources */,
 				92917B1F2330786D00C4DE61 /* AppDelegate.swift in Sources */,
 				92917B662330CD9700C4DE61 /* PlayView.swift in Sources */,
 				92917B602330C56F00C4DE61 /* PlayViewController.swift in Sources */,
 				9224B0442332A51D0092286C /* FinishView.swift in Sources */,
-				92917B6A2330CDB700C4DE61 /* Timer.swift in Sources */,
 				92917B6E2331398A00C4DE61 /* ColourPalette.swift in Sources */,
 				92917B5C2330C0C300C4DE61 /* HomeViewController.swift in Sources */,
 				9224B046233327680092286C /* MasterView.swift in Sources */,
 				9224B0402332A2AA0092286C /* TutorialViewController.swift in Sources */,
 				9224B03E2332114C0092286C /* Preference.swift in Sources */,
+				929C6BB523340239008E0412 /* Score.swift in Sources */,
 				92917B74233140D400C4DE61 /* Triangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

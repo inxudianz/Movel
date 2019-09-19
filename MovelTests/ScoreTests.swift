@@ -11,6 +11,8 @@ import XCTest
 
 class ScoreTests: XCTestCase {
 
+    let score = Score()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -22,6 +24,26 @@ class ScoreTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testPerfectScore() {
+        let result = score.calculateScore(steps: 100, required: 100)
+        XCTAssertEqual(result, 100)
+    }
+    
+    func testFailedScore() {
+        let result = score.calculateScore(steps: 0, required: 100)
+        XCTAssertEqual(result, 0)
+    }
+    
+    func testIsWinning() {
+        let result = score.isWinning(steps: 100, required: 100)
+        XCTAssertEqual(result, true)
+    }
+    
+    func testIsLosing() {
+        let result = score.isWinning(steps: 44, required: 100)
+        XCTAssertEqual(result, false)
     }
 
     func testPerformanceExample() {

@@ -16,6 +16,7 @@ class Triangle: Trigonometry {
         shape = createShape()
         shape.frame = CGRect(x: base.frame.maxX / 4 - 20, y: base.frame.maxY / 8 - 20, width: 150, height: 250)
     }
+    
     internal func createPath() -> UIBezierPath {
         let path = UIBezierPath()
         

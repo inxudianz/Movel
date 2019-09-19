@@ -13,7 +13,6 @@ class Challenge {
     
     init(duration: Float, intensity: String) {
         preference = Preference(intensity: intensity, duration: duration)
-
     }
     
     func createChallenge() -> Int {

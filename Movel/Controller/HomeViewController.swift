@@ -14,18 +14,24 @@ class HomeViewController: UIViewController {
     
     let health = HealthData()
     let homeView = HomeView()
+    var isValidated = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         title = "Home"
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "setting"), style: .plain, target: self, action: #selector(openPreference))
+        createRightBarItem()
         
         self.view = homeView
         
-        validateUser()
-        
         homeView.playButton.addTarget(self, action: #selector(play(sender:)), for: .touchDown)
+    }
+    
+    func createRightBarItem() {
+        let settingMenu = UIBarButtonItem(image: UIImage(named: "setting"), style: .plain, target: self, action: #selector(openPreference))
+        settingMenu.imageInsets.right = CGFloat(-30)
+        settingMenu.imageInsets.left = CGFloat(100)
+        navigationItem.rightBarButtonItem = settingMenu
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -37,6 +43,7 @@ class HomeViewController: UIViewController {
             homeView.topScore.text = "0"
         }
     }
+    
     @objc func play(sender: UIButton!) {
         
         sender.layer.opacity = 0.7
@@ -44,8 +51,16 @@ class HomeViewController: UIViewController {
             sender.layer.opacity = 1
         }
         
-        let tutorialViewController = TutorialViewController()
-        self.present(tutorialViewController, animated: true, completion: nil)
+        validateUser()
+        
+        if isValidated {
+            let tutorialViewController = TutorialViewController()
+            self.present(tutorialViewController, animated: true, completion: nil)
+        }
+        else {
+            print("You are not validated")
+            return
+        }
     }
     
     @objc func openPreference() {
@@ -58,9 +73,11 @@ class HomeViewController: UIViewController {
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
             context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "We want to confirm your identity with Face ID") { (wasCorrect, error) in
                 if wasCorrect {
+                    self.isValidated = true
                     print("Success")
                 }
                 else {
+                    self.isValidated = false
                     print("Failed")
                 }
             }
