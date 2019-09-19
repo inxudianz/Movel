@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreferenceView: UIView {
+class PreferenceView: MasterView {
     
     let intensityLabel = UILabel()
     let intensitySegment = UISegmentedControl()
@@ -17,17 +17,7 @@ class PreferenceView: UIView {
     let durationNumber = UILabel()
     let saveButton = UIButton()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupView()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupView()
-    }
-    
-    func setupView() {
+    override func setupView() {
         backgroundColor = .white
         intensityLabel.frame = CGRect(x: 176, y: 123, width: 70, height: 19)
         intensityLabel.text = "Intensity"

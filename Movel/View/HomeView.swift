@@ -8,24 +8,14 @@
 
 import UIKit
 
-class HomeView: UIView {
+class HomeView: MasterView {
 
     let playButton = UIButton()
     let topScoreLabel = UILabel()
     let topScore = UILabel()
     let playLabel = UILabel()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupView()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupView()
-    }
-    
-    func setupView() {
+    override func setupView() {
         backgroundColor = .white
         
         playButton.frame = CGRect(x: 120, y: 361, width: 174, height: 174)

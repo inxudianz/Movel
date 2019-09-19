@@ -8,14 +8,9 @@
 
 import UIKit
 
-class PlayView: UIView {
+class PlayView: MasterView {
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func setupView() {
+        
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-
 }

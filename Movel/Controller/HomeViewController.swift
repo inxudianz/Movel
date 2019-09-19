@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
     }
 
     @objc func play() {
-        let tutorialViewController = TutorialViewViewController()
+        let tutorialViewController = TutorialViewController()
         self.present(tutorialViewController, animated: true, completion: nil)
     }
     
