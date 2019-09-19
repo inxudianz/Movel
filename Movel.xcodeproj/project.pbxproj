@@ -200,8 +200,8 @@
 			children = (
 				92917B612330CD7400C4DE61 /* HomeView.swift */,
 				92917B632330CD7E00C4DE61 /* PreferenceView.swift */,
-				92917B652330CD9700C4DE61 /* PlayView.swift */,
 				92917B752331429C00C4DE61 /* TutorialView.swift */,
+				92917B652330CD9700C4DE61 /* PlayView.swift */,
 				9224B0432332A51D0092286C /* FinishView.swift */,
 				9224B045233327680092286C /* MasterView.swift */,
 			);

@@ -65,7 +65,6 @@ class PreferenceViewController: UIViewController {
         if (userDefault.float(forKey: "duration") != nil) && (userDefault.string(forKey: "intensity") != nil) {
             preference.duration = userDefault.float(forKey: "duration")
             preference.intensity = userDefault.string(forKey: "intensity")!
-
             
             preferenceView.durationSlider.value = preference.duration
             preferenceView.durationNumber.text = String(preference.duration)
