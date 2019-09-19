@@ -25,8 +25,8 @@ class HomeView: MasterView {
         
         playButton.layer.addSublayer(playTriangle.shape)
         
-        topScoreLabel.frame = CGRect(x: 148, y: 141, width: 121, height: 34)
-        topScoreLabel.text = "Top Score"
+        topScoreLabel.frame = CGRect(x: 148, y: 141, width: 128, height: 34)
+        topScoreLabel.text = "Last Score"
         topScoreLabel.textAlignment = .center
         topScoreLabel.textColor = textColor
         topScoreLabel.font = topScoreLabel.font.withSize(28.0)

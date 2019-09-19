@@ -62,7 +62,7 @@ class PreferenceViewController: UIViewController {
     
     func loadPreviousData() {
         let userDefault = UserDefaults.standard
-        if (userDefault.float(forKey: "duration") != nil) && (userDefault.string(forKey: "intensity") != nil) {
+        if (userDefault.float(forKey: "duration") != 0) && (userDefault.string(forKey: "intensity") != nil) {
             preference.duration = userDefault.float(forKey: "duration")
             preference.intensity = userDefault.string(forKey: "intensity")!
             

@@ -10,21 +10,27 @@ import UIKit
 
 class FinishViewController: UIViewController {
 
+    let finishView = FinishView()
+    var score = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view = finishView
+        
+        finishView.scoreLabel.text = "Score : \(String(score))"
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(gotoMainView))
+        finishView.addGestureRecognizer(tap)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func gotoMainView() {
+        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        saveScore()
     }
-    */
+    
+    func saveScore() {
+        let userDefault = UserDefaults.standard
+        userDefault.set(score, forKey: "score")
+    }
 
 }

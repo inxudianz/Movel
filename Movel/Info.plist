@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>We will use your Face ID to detect the user</string>
+	<key>NSMotionUsageDescription</key>
+	<string>We will use your motion manager to track your steps </string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>We will use your health information to track your steps</string>
 	<key>NSHealthShareUsageDescription</key>

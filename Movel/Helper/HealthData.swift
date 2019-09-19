@@ -13,7 +13,7 @@ fileprivate enum HealthError: Error {
 }
 
 class HealthData {
-    var stepCount:Double?
+    var stepCount:Double = 0
     
     init() {
         authorizeHealthKit { (success, error) in
@@ -61,7 +61,4 @@ class HealthData {
         HKHealthStore().execute(query)
     }
     
-    func getStepCount() {
-        print(stepCount)
-    }
 }

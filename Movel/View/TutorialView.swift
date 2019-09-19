@@ -24,7 +24,7 @@ class TutorialView: MasterView {
         descLabel.frame = CGRect(x: 108, y: 544, width: 199, height: 90)
         descLabel.numberOfLines = 0
         descLabel.textAlignment = .center
-        descLabel.text = "Reach the required amount \n of steps to win"
+        descLabel.text = "Reach the required amount \n of steps on the display \n to win"
         descLabel.font = descLabel.font.withSize(16)
         descLabel.textColor = textColor
         
