@@ -52,7 +52,9 @@ class HomeViewController: UIViewController {
         }
         
         validateUser()
-        
+    }
+    
+    func validated() {
         if isValidated {
             let tutorialViewController = TutorialViewController()
             self.present(tutorialViewController, animated: true, completion: nil)
@@ -74,6 +76,7 @@ class HomeViewController: UIViewController {
             context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "We want to confirm your identity with Face ID") { (wasCorrect, error) in
                 if wasCorrect {
                     self.isValidated = true
+                    self.validated()
                     print("Success")
                 }
                 else {
