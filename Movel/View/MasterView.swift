@@ -34,6 +34,10 @@ extension MasterViewDelegate {
     func setupView() {
         backgroundColor = .white
     }
+    
+    func addToView() {
+        // Add all objects to view
+    }
 }
 
 

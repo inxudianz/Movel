@@ -17,26 +17,39 @@ class TutorialView: MasterView {
     override func setupView() {
         backgroundColor = .white
         
+        initTrophyImage()
+        initDescLabel()
+        initContinueButton()
+        
+        addToView()
+    }
+    
+    func addToView() {
+        self.addSubview(trophyImage)
+        self.addSubview(descLabel)
+        self.addSubview(continueButton)
+    }
+    
+    func initTrophyImage() {
         let trophy = UIImage(named: "trophy")
         trophyImage.image = trophy
         trophyImage.frame = CGRect(x: 57, y: 244, width: 300, height: 300)
-        
+    }
+    
+    func initDescLabel() {
         descLabel.frame = CGRect(x: 108, y: 544, width: 199, height: 90)
         descLabel.numberOfLines = 0
         descLabel.textAlignment = .center
         descLabel.text = "Reach the required amount \n of steps on the display \n to win"
         descLabel.font = descLabel.font.withSize(16)
         descLabel.textColor = textColor
-        
+    }
+    
+    func initContinueButton() {
         continueButton.frame = CGRect(x: 107, y: 752, width: 200, height: 50)
         continueButton.layer.cornerRadius = 8
         continueButton.layer.backgroundColor = buttonColor?.cgColor
         continueButton.setTitle("Continue", for: .normal)
-        
-        
-        self.addSubview(trophyImage)
-        self.addSubview(descLabel)
-        self.addSubview(continueButton)
     }
 
 }
